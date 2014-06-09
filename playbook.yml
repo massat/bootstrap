@@ -1,0 +1,18 @@
+- name: setup user environments
+  hosts: localhost
+  connection: local
+  gather_facts: true
+
+  tasks:
+  - name: clone oh-my-zsh repo
+    git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
+
+  - name: deploy .zshrc
+    template: src=~/.oh-my-zsh/templates/zshrc.zsh-template dest=~/.zshrc
+
+  - name: add zsh to standard shells
+    sudo: yes
+    lineinfile: dest=/etc/shells line=/usr/local/bin/zsh
+
+  - name: set default shell
+    command: "chsh -s /usr/local/bin/zsh {{ ansible_env.USER }}"
