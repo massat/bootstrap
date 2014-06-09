@@ -1,0 +1,4 @@
+bootstrap
+=========
+
+Bootstrap my mac.
