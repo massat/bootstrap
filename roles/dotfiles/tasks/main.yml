@@ -1,0 +1,10 @@
+---
+
+- name: clone dot files repo
+  git: repo=https://github.com/massat/dotfiles.git dest=~/dotfiles
+
+- name: .gitconfig
+  file: src=~/dotfiles/gitconfig dest=~/.gitconfig state=link
+
+- name: .gitignore
+  file: src=~/dotfiles/gitignore dest=~/.gitignore state=link

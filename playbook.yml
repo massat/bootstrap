@@ -3,41 +3,6 @@
   connection: local
   gather_facts: true
 
-  tasks:
-  #############
-  # dotfiles
-  #############
-  - name: clone dot files repo
-    git: repo=https://github.com/massat/dotfiles.git dest=~/dotfiles
-
-  - name: .gitconfig
-    file: src=~/dotfiles/gitconfig dest=~/.gitconfig state=link
-
-  - name: .gitignore
-    file: src=~/dotfiles/gitignore dest=~/.gitignore state=link
-
-  #############
-  # zsh
-  #############
-  - name: clone oh-my-zsh repo
-    git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
-
-  - name: deploy .zshrc
-    template: src=~/.oh-my-zsh/templates/zshrc.zsh-template dest=~/.zshrc
-
-  - name: add zsh to standard shells
-    sudo: yes
-    lineinfile: dest=/etc/shells line=/usr/local/bin/zsh
-
-  - name: set default shell
-    command: "chsh -s /usr/local/bin/zsh {{ ansible_env.USER }}"
-
-  - name: .myzshrc
-    file: src=~/dotfiles/myzshrc dest=~/.myzshrc state=link
-
-  - name: .zshrc_ssh
-    file: src=~/dotfiles/zshrc_ssh dest=~/.zshrc_ssh state=link
-
-  - name: use myzshrc
-    lineinfile: dest=~/.zshrc line=". ~/.myzshrc"
-
+  roles:
+    - { role: roles/dotfiles }
+    - { role: roles/zsh }
