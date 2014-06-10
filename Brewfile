@@ -25,6 +25,7 @@ cask install alfred
 cask install coteditor
 cask install evernote
 cask install google-chrome
+cask install google-japanese-ime
 cask install hipchat
 cask install iterm2
 cask install libreoffice
