@@ -1,0 +1,46 @@
+---
+
+- name: update
+  homebrew: update_homebrew=yes
+
+- name: tap repositries
+  command: "brew tap {{ item }}"
+  with_items:
+    - homebrew/versions
+    - phinze/homebrew-cask
+
+- name: install packages
+  homebrew: "name={{ item }}"
+  with_items:
+    - zsh
+    - autojump
+    - wget
+    - curl
+    - mobile-shell
+    - git
+    - hub
+    - tig
+    - brew-cask
+
+- name: install apps
+  homebrew_cask: "name={{ item }}"
+  with_items:
+    - alfred
+    - coteditor
+    - evernote
+    - google-chrome
+    - google-japanese-ime
+    - hipchat
+    - iterm2
+    - libreoffice
+    - mysqlworkbench
+    - skype
+    - slack
+    - sophos-anti-virus-home-edition
+    - sublime-text
+    - virtualbox
+    - vagrant
+    - yorufukurou
+
+- name: link alfred
+  command: brew cask alfred link

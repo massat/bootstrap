@@ -12,21 +12,14 @@ synopsis
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-### clone repo.
+### install ansible with homebrew
 
 ```sh
-$ clone git@github.com:massat/bootstrap.git
-$ cd bootstrap
-```
-
-### install packages with homebrew
-
-```sh
-$ brew bundle
+$ brew install ansible
 ```
 
 ### setup with ansible
 
 ```sh
-$ ansible-playbook -i inventory -K playbook.yml 
+$ ansible-playbook -i inventory -K playbook.yml
 ```
