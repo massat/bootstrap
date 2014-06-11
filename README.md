@@ -18,6 +18,13 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 $ brew install ansible
 ```
 
+### clone repositry
+
+```sh
+$ git clone git@github.com:massat/bootstrap.git
+$ cd bootstrap
+```
+
 ### setup with ansible
 
 ```sh
