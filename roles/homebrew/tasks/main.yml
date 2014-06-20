@@ -17,10 +17,7 @@
     - wget
     - curl
     - mobile-shell
-    - git
-    - hub
     - the_silver_searcher
-    - tig
     - brew-cask
 
 - name: install apps
@@ -32,7 +29,7 @@
     - google-chrome
     - google-japanese-ime
     - hipchat
-    - hoster
+    # - hoster
     - iterm2
     - libreoffice
     - mysqlworkbench

@@ -8,3 +8,4 @@
     - { role: roles/dotfiles }
     - { role: roles/zsh }
     - { role: roles/git, sudo: yes }
+    - { role: roles/php53 }

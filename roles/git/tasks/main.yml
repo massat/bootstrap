@@ -1,4 +1,10 @@
 ---
+- name: git | install git, hub, tig
+  homebrew: "name={{ item }}"
+  with_items:
+    - git
+    - hub
+    - tig
 
 - name: git | download git-credential-osxkeychain
   get_url: url=https://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain dest=/usr/local/bin
