@@ -7,3 +7,4 @@
     - { role: roles/homebrew }
     - { role: roles/dotfiles }
     - { role: roles/zsh }
+    - { role: roles/git, sudo: yes }

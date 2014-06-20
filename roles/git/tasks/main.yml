@@ -1,0 +1,10 @@
+---
+
+- name: git | download git-credential-osxkeychain
+  get_url: url=https://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain dest=/usr/local/bin
+
+- name: git | add +x permission
+  command: chmod u+x /usr/local/bin/git-credential-osxkeychain
+
+- name: git | configure credential.helper osxkeychain
+  command: git config --global credential.helper osxkeychain
