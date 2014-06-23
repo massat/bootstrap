@@ -9,3 +9,4 @@
     - { role: roles/zsh }
     - { role: roles/git, sudo: yes }
     - { role: roles/php53 }
+    - { role: roles/python, sudo: yes }

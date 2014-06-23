@@ -1,0 +1,7 @@
+---
+
+- name: python | install pip
+  command: easy_install pip
+
+- name: python | install boto
+  command: pip install boto
