@@ -1,0 +1,13 @@
+---
+
+- name: ruby | install rbenv ruby-build
+  homebrew: name="{{ item }}"
+  with_items:
+    - rbenv
+    - ruby-build
+
+- name: ruby | update profile
+  lineinfile: dest=~/.zshrc line='eval "$(rbenv init -)"'
+
+- name: ruby | install ruby
+  command: "rbenv install {{ version }}"
