@@ -41,7 +41,6 @@
     - sophos-anti-virus-home-edition
     - sublime-text
     - virtualbox
-    - vagrant
     - yorufukurou
 
 - name: brew | link alfred

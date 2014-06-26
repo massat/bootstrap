@@ -6,6 +6,7 @@
   roles:
     - { role: roles/system, sudo: yes }
     - { role: roles/homebrew }
+    - { role: roles/vagrant }
     - { role: roles/dotfiles }
     - { role: roles/zsh }
     - { role: roles/git, sudo: yes }
