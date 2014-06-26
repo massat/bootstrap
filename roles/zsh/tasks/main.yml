@@ -14,8 +14,8 @@
   command: "chsh -s /usr/local/bin/zsh {{ ansible_env.USER }}"
 
 - name: zsh | .myzshrc
-  file: src=~/dotfiles/myzshrc dest=~/.myzshrc state=link
+  copy: src=~/dotfiles/myzshrc dest=~/.myzshrc
 
 - name: zsh | .zshrc_ssh
-  file: src=~/dotfiles/zshrc_ssh dest=~/.zshrc_ssh state=link
+  copy: src=~/dotfiles/zshrc_ssh dest=~/.zshrc_ssh
 

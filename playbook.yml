@@ -4,6 +4,7 @@
   gather_facts: true
 
   roles:
+    - { role: roles/system, sudo: yes }
     - { role: roles/homebrew }
     - { role: roles/dotfiles }
     - { role: roles/zsh }

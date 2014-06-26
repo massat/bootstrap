@@ -1,16 +1,17 @@
 ---
 
-- name: update
+- name: brew | update
   homebrew: update_homebrew=yes
 
-- name: tap repositries
-  command: "brew tap {{ item }}"
+- name: brew | tap repositries
+  homebrew_tap: "tap={{ item }}"
+  ignore_errors: True
   with_items:
     - homebrew/versions
-    - phinze/homebrew-cask
+    - caskroom/cask
     - peco/peco
 
-- name: install packages
+- name: brew | install packages
   homebrew: "name={{ item }}"
   with_items:
     - zsh
@@ -22,7 +23,7 @@
     - peco
     - brew-cask
 
-- name: install apps
+- name: brew | install apps
   homebrew_cask: "name={{ item }}"
   with_items:
     - alfred
@@ -43,5 +44,5 @@
     - vagrant
     - yorufukurou
 
-- name: link alfred
+- name: brew | link alfred
   command: brew cask alfred link

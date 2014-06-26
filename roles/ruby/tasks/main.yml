@@ -19,6 +19,3 @@
 
 - name: ruby | set globaly
   command: "rbenv global {{ version }}"
-
-- name: ruby | source config
-  command: . ~/.myzshrc

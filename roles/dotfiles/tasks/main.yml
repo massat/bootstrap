@@ -4,7 +4,7 @@
   git: repo=https://github.com/massat/dotfiles.git dest=~/dotfiles
 
 - name: .gitconfig
-  file: src=~/dotfiles/gitconfig dest=~/.gitconfig state=link
+  copy: src=~/dotfiles/gitconfig dest=~/.gitconfig
 
 - name: .gitignore
-  file: src=~/dotfiles/gitignore dest=~/.gitignore state=link
+  copy: src=~/dotfiles/gitignore dest=~/.gitignore
