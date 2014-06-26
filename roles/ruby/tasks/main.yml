@@ -7,7 +7,18 @@
     - ruby-build
 
 - name: ruby | update profile
-  lineinfile: dest=~/.zshrc line='eval "$(rbenv init -)"'
+  lineinfile: dest=~/.myzshrc line='eval "$(rbenv init -)"'
+
+- name: "ruby | check {{ version }} is installed"
+  command: "test -x ~/.rbenv/versions/{{ version }}"
+  register: ruby_installed
 
 - name: ruby | install ruby
   command: "rbenv install {{ version }}"
+  when: not ruby_installed
+
+- name: ruby | set globaly
+  command: "rbenv global {{ version }}"
+
+- name: ruby | source config
+  command: . ~/.myzshrc

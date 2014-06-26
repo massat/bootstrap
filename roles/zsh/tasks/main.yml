@@ -19,5 +19,3 @@
 - name: zsh | .zshrc_ssh
   file: src=~/dotfiles/zshrc_ssh dest=~/.zshrc_ssh state=link
 
-- name: zsh | use myzshrc
-  lineinfile: dest=~/.zshrc line=". ~/.myzshrc"
