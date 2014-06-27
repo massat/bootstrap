@@ -19,3 +19,6 @@
 
 - name: ruby | set globaly
   command: "rbenv global {{ version }}"
+
+- name: ruby | place .gemrc
+  template: "src=templates/gemrc dest=~/.gemrc"
