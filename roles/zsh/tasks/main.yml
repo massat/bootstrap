@@ -6,6 +6,9 @@
 - name: zsh | deploy .zshrc
   template: src=~/.oh-my-zsh/templates/zshrc.zsh-template dest=~/.zshrc
 
+- name: zsh | use myzshrc
+  lineinfile: dest=~/.zshrc line=". ~/.myzshrc"
+
 - name: zsh | add zsh to standard shells
   sudo: yes
   lineinfile: dest=/etc/shells line=/usr/local/bin/zsh
@@ -18,4 +21,3 @@
 
 - name: zsh | .zshrc_ssh
   copy: src=~/dotfiles/zshrc_ssh dest=~/.zshrc_ssh
-
