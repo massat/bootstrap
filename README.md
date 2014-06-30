@@ -6,6 +6,12 @@ Bootstrap my mac.
 synopsis
 --------
 
+### install the command line developer tools
+
+```sh
+$ xcode-select --install
+```
+
 ### install homebrew
 
 ```sh
