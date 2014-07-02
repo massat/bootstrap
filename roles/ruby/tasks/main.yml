@@ -21,7 +21,7 @@
   command: "rbenv global {{ version }}"
 
 - name: ruby | place .gemrc
-  template: "src=templates/gemrc dest=~/.gemrc"
+  template: "src=gemrc dest=~/.gemrc"
 
 - name: ruby | rbenv rehash
   command: rbenv rehash
