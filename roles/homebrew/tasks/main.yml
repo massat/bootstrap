@@ -21,6 +21,7 @@
     - mobile-shell
     - the_silver_searcher
     - peco
+    - pwgen
     - brew-cask
 
 - name: brew | install apps
