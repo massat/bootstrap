@@ -14,3 +14,10 @@
 
 - name: git | configure credential.helper osxkeychain
   command: git config --global credential.helper osxkeychain
+
+- name: git | path to git
+  command: brew --prefix git
+  register: path_to_git
+
+- name: git | link diff-highlight into PATH
+  file: "src={{ path_to_git.stdout }}/share/git-core/contrib/diff-highlight/diff-highlight dest=/usr/local/bin/diff-highlight state=link"
