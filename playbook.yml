@@ -12,4 +12,4 @@
     - { role: roles/git, sudo: yes }
     - { role: roles/php53 }
     - { role: roles/python, sudo: yes }
-    - { role: roles/ruby, version: 2.1.2 }
+    - { role: roles/ruby, version: 1.9.3-p547 }
