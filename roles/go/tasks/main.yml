@@ -1,4 +1,9 @@
 ---
+- name: brew | tap repositries
+  homebrew_tap: "tap={{ item }}"
+  ignore_errors: True
+  with_items:
+    - peco/peco
 
 - name: go | install go and tools
   homebrew: "name={{ item }}"
@@ -10,11 +15,15 @@
 - name: go | place go.conf
   copy: src=go.conf dest=~/.dotfiles.d/go.conf
 
+- name: go | place peco.conf
+  copy: src=peco.conf dest=~/.dotfiles.d/peco.conf
+
+- name: go | install gh-open
+  shell: GOPATH=$HOME go get -u github.com/typester/gh-open
+
 - name: go | install ghq
   shell: GOPATH=$HOME go get github.com/motemen/ghq
 
 - name: ghq | configure ghq.root
   command: git config --global ghq.root ~/src
 
-- name: ghq | place ghq.conf
-  copy: src=ghq.conf dest=~/.dotfiles.d/ghq.conf

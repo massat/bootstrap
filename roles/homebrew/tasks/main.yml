@@ -9,7 +9,6 @@
   with_items:
     - homebrew/versions
     - caskroom/cask
-    - peco/peco
 
 - name: brew | install packages
   homebrew: "name={{ item }}"
