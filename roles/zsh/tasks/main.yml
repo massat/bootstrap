@@ -1,5 +1,17 @@
 ---
 
+- name: brew | install packages
+  homebrew: "name={{ item }}"
+  with_items:
+    - zsh
+    - autojump
+
+- name: zsh | .myzshrc
+  copy: src=myzshrc dest=~/.myzshrc
+
+- name: zsh | .zshrc_ssh
+  copy: src=zshrc_ssh dest=~/.zshrc_ssh
+
 - name: zsh | clone oh-my-zsh repo
   git: repo=https://github.com/robbyrussell/oh-my-zsh.git dest=~/.oh-my-zsh
 
@@ -9,6 +21,9 @@
 - name: zsh | use myzshrc
   lineinfile: dest=~/.zshrc line=". ~/.myzshrc"
 
+- name: zsh | mkdir .dotfiles.d
+  file: path=~/.dotfiles.d state=directory
+
 - name: zsh | add zsh to standard shells
   sudo: yes
   lineinfile: dest=/etc/shells line=/usr/local/bin/zsh
@@ -16,8 +31,3 @@
 - name: zsh | set default shell
   command: "chsh -s /usr/local/bin/zsh {{ ansible_env.USER }}"
 
-- name: zsh | .myzshrc
-  copy: src=~/dotfiles/myzshrc dest=~/.myzshrc
-
-- name: zsh | .zshrc_ssh
-  copy: src=~/dotfiles/zshrc_ssh dest=~/.zshrc_ssh

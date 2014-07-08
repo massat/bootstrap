@@ -1,10 +1,17 @@
 ---
+
 - name: git | install git, hub, tig
   homebrew: "name={{ item }}"
   with_items:
     - git
     - hub
     - tig
+
+- name: git | place .gitconfig
+  copy: src=gitconfig dest=~/.gitconfig
+
+- name: git | place .gitignore
+  copy: src=gitignore dest=~/.gitignore
 
 - name: git | download git-credential-osxkeychain
   get_url: url=https://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain dest=/usr/local/bin

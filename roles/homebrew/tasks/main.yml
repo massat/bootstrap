@@ -14,13 +14,10 @@
 - name: brew | install packages
   homebrew: "name={{ item }}"
   with_items:
-    - zsh
-    - autojump
     - wget
     - curl
     - mobile-shell
     - the_silver_searcher
-    - peco
     - pwgen
     - brew-cask
 

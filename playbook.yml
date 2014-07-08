@@ -6,10 +6,10 @@
   roles:
     - { role: roles/system, sudo: yes }
     - { role: roles/homebrew }
-    - { role: roles/vagrant }
-    - { role: roles/dotfiles }
     - { role: roles/zsh }
     - { role: roles/git, sudo: yes }
+    - { role: roles/vagrant }
     - { role: roles/php53 }
     - { role: roles/python, sudo: yes }
     - { role: roles/ruby, version: 1.9.3-p547 }
+    - { role: roles/go }

@@ -1,0 +1,23 @@
+---
+
+- name: go | install go and tools
+  homebrew: "name={{ item }}"
+  with_items:
+    - hg
+    - go
+    - peco
+
+- name: go | place go.conf
+  copy: src=go.conf dest=~/.dotfiles.d/go.conf
+
+- name: go | load config
+  shell: source ~/.dotfiles.d/go.conf
+
+- name: go | install ghq
+  command: go get github.com/motemen/ghq
+
+- name: ghq | configure ghq.root
+  command: git config --global ghq.root ~/src
+
+- name: ghq | place ghq.conf
+  copy: src=ghq.conf dest=~/.dotfiles.d/ghq.conf
