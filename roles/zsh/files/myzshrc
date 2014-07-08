@@ -45,5 +45,6 @@ export GREP_OPTIONS='--color=auto'
 alias git=hub
 
 # load extra configs
-. ~/.dotfiles.d/*
-
+for file in `ls ~/.dotfiles.d/*.conf`; do
+    source $file
+done
