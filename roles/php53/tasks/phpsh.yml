@@ -1,0 +1,4 @@
+---
+
+- name: php | install phpsh
+  homebrew: name=phpsh

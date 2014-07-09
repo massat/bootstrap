@@ -13,3 +13,4 @@
     - php53-memcache
     - php53-pdo-dblib
 
+- include: phpsh.yml
