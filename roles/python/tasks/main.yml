@@ -5,3 +5,5 @@
 
 - name: python | install boto
   command: pip install boto
+
+- include: asciinema.yml

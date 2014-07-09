@@ -1,0 +1,10 @@
+---
+
+- name: asciinema | upgrade requests
+  command: easy_install --upgrade requests
+
+- name: asciinema | upgrade pip
+  command: easy_install --upgrade pip
+
+- name: asciinema | install asciinema
+  command: pip install --upgrade asciinema
