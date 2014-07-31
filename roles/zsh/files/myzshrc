@@ -41,8 +41,8 @@ export GREP_OPTIONS='--color=auto'
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# use `hub`
-alias git=hub
+# use `gh`
+eval "$(gh alias -s)"
 
 # load extra configs
 for file in `ls ~/.dotfiles.d/*.conf`; do
