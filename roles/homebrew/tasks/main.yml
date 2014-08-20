@@ -25,6 +25,7 @@
   with_items:
     - alfred
     - coteditor
+    - dropbox
     - evernote
     - google-chrome
     - google-japanese-ime
