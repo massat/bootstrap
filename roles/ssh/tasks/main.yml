@@ -1,0 +1,4 @@
+---
+
+- name: ssh | place .ssh/config
+  copy: src=config dest=~/.ssh/config mode=0600

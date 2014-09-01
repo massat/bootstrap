@@ -7,6 +7,7 @@
     - { role: roles/system, sudo: yes }
     - { role: roles/homebrew }
     - { role: roles/zsh }
+    - { role: roles/ssh }
     - { role: roles/git }
     - { role: roles/vagrant }
     - { role: roles/php53 }
