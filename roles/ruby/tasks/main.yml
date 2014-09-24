@@ -28,4 +28,7 @@
   command: rbenv rehash
 
 - name: ruby | install bundler
-  gem:  name=bundler
+  gem:  name={{ item }}
+  with_items:
+    - bundler
+    - pry
