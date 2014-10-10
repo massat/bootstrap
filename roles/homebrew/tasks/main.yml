@@ -1,7 +1,7 @@
 ---
 
 - name: brew | update
-  homebrew: update_homebrew=yes
+  homebrew: update_homebrew=yes upgrade_all=yes
 
 - name: brew | tap repositries
   homebrew_tap: "tap={{ item }}"
@@ -27,12 +27,11 @@
     - coteditor
     - dropbox
     - evernote
+    - karabiner
     - google-chrome
     - google-japanese-ime
-    - hipchat
     - hoster
     - iterm2
-    - kobito
     - libreoffice
     - mysqlworkbench
     - skype
