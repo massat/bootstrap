@@ -7,3 +7,4 @@
   command: pip install boto
 
 - include: asciinema.yml
+- include: seqdiag.yml
