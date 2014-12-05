@@ -22,6 +22,7 @@ alias ll="ls -lGa"
 alias ls='ls -G'
 alias ssh="ssh -o ServerAliveInterval=60"
 alias rake='noglob rake'
+alias g="git"
 
 ################################################
 # Environment

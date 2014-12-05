@@ -45,4 +45,5 @@
     - yorufukurou
 
 - name: brew | link alfred
+  sudo: yes
   command: brew cask alfred link
