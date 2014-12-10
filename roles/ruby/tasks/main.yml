@@ -32,3 +32,4 @@
   with_items:
     - bundler
     - pry
+    - git-pr-release
