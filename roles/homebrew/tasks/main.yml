@@ -13,18 +13,20 @@
 - name: brew | install packages
   homebrew: "name={{ item }}"
   with_items:
-    - wget
+    - brew-cask
     - curl
     - mobile-shell
-    - the_silver_searcher
+    - ngrep
     - pwgen
-    - brew-cask
+    - the_silver_searcher
+    - wget
 
 - name: brew | install apps
   homebrew_cask: "name={{ item }}"
   with_items:
     - alfred
     - coteditor
+    - dash
     - dropbox
     - evernote
     - karabiner
