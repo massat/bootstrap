@@ -36,13 +36,14 @@
     - iterm2
     - libreoffice
     - mysqlworkbench
-    - onepassword
+#    - onepassword
     - qlmarkdown
     - skype
     - slack
     - sophos-anti-virus-home-edition
     - sublime-text
     - sqwiggle
+    - toggldesktop
     - virtualbox
     - yorufukurou
 
