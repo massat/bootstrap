@@ -45,8 +45,9 @@
     - sublime-text
     - sqwiggle
     - toggldesktop
+    - trailer
     - virtualbox
-    - yorufukurou
+#    - yorufukurou
 
 - name: brew | link alfred
   sudo: yes

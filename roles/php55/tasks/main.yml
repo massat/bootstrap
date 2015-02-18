@@ -9,9 +9,9 @@
 - name: php | install
   homebrew: name="{{ item }}"
   with_items:
-    - php53
-    - php53-memcache
-    - php53-pdo-dblib
+    - php55
+    - php55-memcache
+    - php55-pdo-dblib
     - composer
 
 - include: psysh.yml

@@ -10,7 +10,7 @@
     - { role: roles/ssh }
     - { role: roles/git }
     - { role: roles/vagrant }
-    - { role: roles/php53 }
+    - { role: roles/php55 }
     - { role: roles/python, sudo: yes }
     - { role: roles/ruby, version: 1.9.3-p547 }
     - { role: roles/go }
