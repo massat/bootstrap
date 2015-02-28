@@ -29,3 +29,6 @@
 
 - name: go | install godoc
   command: go get golang.org/x/tools/cmd/godoc
+
+- name: go | install gore
+  command: go get github.com/motemen/gore
