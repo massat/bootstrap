@@ -17,6 +17,7 @@
     - curl
     - mobile-shell
     - ngrep
+    - pup
     - pwgen
     - the_silver_searcher
     - wget
@@ -25,6 +26,7 @@
   homebrew_cask: "name={{ item }}"
   with_items:
     - alfred
+    - atom
     - coteditor
     - dash
     - dropbox

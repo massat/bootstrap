@@ -11,6 +11,7 @@
     - hg
     - go
     - peco
+    - hugo
 
 - name: go | place go.conf
   copy: src=go.conf dest=~/.dotfiles.d/go.conf
