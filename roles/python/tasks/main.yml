@@ -2,9 +2,11 @@
 
 - name: python | install pip
   command: easy_install pip
+  sudo: yes
 
 - name: python | install boto
   command: pip install boto
+  sudo: yes
 
 - include: asciinema.yml
 - include: seqdiag.yml

@@ -2,9 +2,12 @@
 
 - name: asciinema | upgrade requests
   command: easy_install --upgrade requests
+  sudo: yes
 
 - name: asciinema | upgrade pip
   command: easy_install --upgrade pip
+  sudo: yes
 
 - name: asciinema | install asciinema
   command: pip install --upgrade asciinema
+  sudo: yes

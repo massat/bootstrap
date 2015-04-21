@@ -2,3 +2,4 @@
 
 - name: seqdiag | install seqdiag
   command: pip install --upgrade seqdiag
+  sudo: yes
