@@ -13,6 +13,7 @@
 - name: brew | install packages
   homebrew: "name={{ item }}"
   with_items:
+    - awscli
     - brew-cask
     - curl
     - mobile-shell
