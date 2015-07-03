@@ -21,6 +21,7 @@
     - pup
     - pwgen
     - the_silver_searcher
+    - tmux
     - wget
 
 - name: brew | install apps
