@@ -11,5 +11,5 @@
     - { role: roles/git }
     - { role: roles/vagrant }
     - { role: roles/python }
-    - { role: roles/ruby, version: 1.9.3-p547 }
+    - { role: roles/ruby, version: 2.2.2 }
     - { role: roles/go }
