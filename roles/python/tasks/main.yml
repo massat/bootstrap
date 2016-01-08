@@ -9,4 +9,3 @@
   sudo: yes
 
 - include: asciinema.yml
-- include: seqdiag.yml

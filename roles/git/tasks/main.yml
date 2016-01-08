@@ -4,8 +4,8 @@
   homebrew: "name={{ item }}"
   with_items:
     - git
+    - hub
     - tig
-    - gh
 
 - name: git | place .gitconfig
   copy: src=gitconfig dest=~/.gitconfig
@@ -30,3 +30,5 @@
 
 - name: git | link diff-highlight into PATH
   file: "src={{ path_to_git.stdout }}/share/git-core/contrib/diff-highlight/diff-highlight dest=/usr/local/bin/diff-highlight state=link"
+
+- include: hub.zsh_completion.yml

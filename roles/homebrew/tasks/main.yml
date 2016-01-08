@@ -40,19 +40,11 @@
     - iterm2
     - karabiner
     - libreoffice
-    - mysqlworkbench
 #    - onepassword
     - qlmarkdown
-    - skype
     - slack
     - sophos-anti-virus-home-edition
     - sublime-text
     - sqwiggle
-    - todoist
     - trailer
     - virtualbox
-#    - yorufukurou
-
-- name: brew | link alfred
-  sudo: yes
-  command: brew cask alfred link

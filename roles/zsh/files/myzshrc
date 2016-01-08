@@ -42,8 +42,10 @@ export GREP_OPTIONS='--color=auto'
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# use `gh`
-eval "$(gh alias -s)"
+# use `hub`
+eval "$(hub alias -s)"
+fpath=(~/.zsh/completions $fpath)
+autoload -U compinit && compinit
 
 # load extra configs
 for file in `ls ~/.dotfiles.d/*.conf`; do
