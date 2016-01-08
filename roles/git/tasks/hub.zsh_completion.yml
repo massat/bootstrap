@@ -1,0 +1,5 @@
+---
+
+- file: path=~/.zsh/completions state=directory
+
+- get_url: url=https://raw.githubusercontent.com/github/hub/master/etc/hub.zsh_completion dest=~/.zsh/completions/_hub
