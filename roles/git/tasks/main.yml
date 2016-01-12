@@ -13,6 +13,15 @@
 - name: git | place .gitignore
   copy: src=gitignore dest=~/.gitignore
 
+- name: git | dir for templates
+  file: path=~/.git_template/hooks state=directory
+
+- name: git | place hook scripts
+  copy: src={{ item }} dest=~/.git_template/hooks mode=0755
+  with_items:
+    - post-checkout
+
+
 - name: git | download git-credential-osxkeychain
   get_url: url=https://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain dest=/usr/local/bin
   sudo: yes
