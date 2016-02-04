@@ -9,6 +9,7 @@
   with_items:
     - homebrew/versions
     - caskroom/cask
+    - homebrew/fuse
 
 - name: brew | install packages
   homebrew: "name={{ item }}"
@@ -22,6 +23,7 @@
     - pwgen
     - pyenv-virtualenv
     - pyenv-virtualenvwrapper
+    - sshfs
     - the_silver_searcher
     - tmux
     - wget
@@ -42,6 +44,7 @@
     - iterm2
     - karabiner
     - libreoffice
+    - osxfuse
 #    - onepassword
     - qlmarkdown
     - slack
