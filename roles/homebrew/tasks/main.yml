@@ -20,6 +20,8 @@
     - ngrep
     - pup
     - pwgen
+    - pyenv-virtualenv
+    - pyenv-virtualenvwrapper
     - the_silver_searcher
     - tmux
     - wget
