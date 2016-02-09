@@ -10,8 +10,8 @@
 - name: git | place .gitconfig
   copy: src=gitconfig dest=~/.gitconfig
 
-- name: git | place .gitignore
-  copy: src=gitignore dest=~/.gitignore
+# - name: git | place .gitignore
+#   copy: src=gitignore dest=~/.gitignore
 
 - name: git | dir for templates
   file: path=~/.git_template/hooks state=directory
