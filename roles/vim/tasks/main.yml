@@ -1,0 +1,4 @@
+---
+
+- homebrew: name=vim install_options=override-system-vi,with-lua,with-luajit
+
