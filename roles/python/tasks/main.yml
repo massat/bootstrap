@@ -9,3 +9,4 @@
   sudo: yes
 
 - include: asciinema.yml
+- include: jedi.yml
