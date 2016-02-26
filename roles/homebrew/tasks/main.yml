@@ -21,9 +21,6 @@
     - ngrep
     - pup
     - pwgen
-    - pyenv-virtualenv
-    - pyenv-virtualenvwrapper
-    - sshfs
     - the_silver_searcher
     - tmux
     - wget
@@ -32,19 +29,15 @@
   homebrew_cask: "name={{ item }}"
   with_items:
     - alfred
-    - atom
-    - coteditor
     - dash
     - dropbox
     - evernote
     - google-chrome
     - google-japanese-ime
-    - gyazo
     - hoster
     - iterm2
     - karabiner
     - libreoffice
-    - osxfuse
 #    - onepassword
     - qlmarkdown
     - slack
