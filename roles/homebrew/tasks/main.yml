@@ -9,7 +9,7 @@
   with_items:
     - homebrew/versions
     - caskroom/cask
-    - homebrew/fuse
+    - sanemat/font
 
 - name: brew | install packages
   homebrew: "name={{ item }}"
@@ -47,3 +47,5 @@
     - sqwiggle
     - trailer
     - virtualbox
+
+- include: ricty.yml

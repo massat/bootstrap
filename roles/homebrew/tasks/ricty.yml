@@ -1,0 +1,7 @@
+
+- homebrew: name=ricty install_options=vim-powerline
+- shell: brew info ricty | grep 'sanemat/font/ricty' | awk '{ print $3 }'
+  register: ricty_version
+
+- shell: cp /usr/local/Cellar/ricty/{{ ricty_version.stdout }}/share/fonts/Ricty*.ttf ~/Library/Fonts/
+- command: fc-cache -vf
