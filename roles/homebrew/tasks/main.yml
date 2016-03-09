@@ -9,7 +9,6 @@
   with_items:
     - homebrew/versions
     - caskroom/cask
-    - sanemat/font
 
 - name: brew | install packages
   homebrew: "name={{ item }}"
@@ -49,3 +48,4 @@
     - virtualbox
 
 - include: ricty.yml
+- include: jo.yml
