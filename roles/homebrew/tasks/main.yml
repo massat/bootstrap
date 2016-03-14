@@ -15,6 +15,7 @@
   with_items:
     - awscli
     - brew-cask
+    - ctags
     - curl
     - mobile-shell
     - ngrep
