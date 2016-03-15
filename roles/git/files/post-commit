@@ -1,4 +1,3 @@
 #!/bin/sh
 
-exec git submodule update
 exec .git/hooks/ctags >/dev/null 2>&1 &

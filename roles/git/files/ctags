@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+trap "rm -f .git/tags.$$" EXIT
+ctags --tag-relative -R -f .git/tags.$$ --exclude=.git --exclude=log --exclude=cache --exclude=.vagrant
+mv .git/tags.$$ .git/tags
+

@@ -19,7 +19,11 @@
 - name: git | place hook scripts
   copy: src={{ item }} dest=~/.git_template/hooks mode=0755
   with_items:
+    - ctags
     - post-checkout
+    - post-commit
+    - post-merge
+    - post-rewrite
 
 
 - name: git | download git-credential-osxkeychain
