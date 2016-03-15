@@ -19,20 +19,9 @@
 - name: go | place peco.conf
   copy: src=peco.conf dest=~/.dotfiles.d/peco.conf
 
-- name: go | install gh-open
-  shell: GOPATH=$HOME go get -u github.com/typester/gh-open
-
 - name: go | install ghq
   shell: GOPATH=$HOME go get -u github.com/motemen/ghq
 
 - name: ghq | configure ghq.root
   command: git config --global ghq.root ~/src
 
-- name: go | install godoc
-  shell: GOPATH=$HOME go get -u golang.org/x/tools/cmd/godoc
-
-- name: go | install gocode
-  shell: GOPATH=$HOME go get -u github.com/nsf/gocode
-
-- name: go | install gore
-  shell: GOPATH=$HOME go get -u github.com/motemen/gore
