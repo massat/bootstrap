@@ -1,7 +1,0 @@
----
-
-- name: install psysh
-  command: composer g require psy/psysh:@stable
-
-- name: symlink from ~/bin
-  file: dest=~/bin/psysh src=~/.composer/vendor/psy/psysh/bin/psysh state=link

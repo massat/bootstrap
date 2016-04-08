@@ -4,14 +4,11 @@
   command: "brew tap {{ item }}"
   with_items:
     - homebrew/php
-    - homebrew/dupes
 
 - name: php | install
   homebrew: name="{{ item }}"
   with_items:
-    - php55
-    - php55-memcache
-    - php55-pdo-dblib
+    - php70
     - composer
 
 - include: psysh.yml

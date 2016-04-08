@@ -1,0 +1,3 @@
+---
+- command: composer g require psy/psysh:@stable
+- file: dest=~/bin/psysh src=~/.composer/vendor/psy/psysh/bin/psysh state=link
