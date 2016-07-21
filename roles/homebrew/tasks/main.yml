@@ -7,6 +7,7 @@
   homebrew_tap: "tap={{ item }}"
   ignore_errors: True
   with_items:
+    - homebrew/binary
     - homebrew/versions
     - caskroom/cask
 
@@ -17,8 +18,10 @@
     - brew-cask
     - ctags
     - curl
+    - jo
     - mobile-shell
     - ngrep
+    - ngrok2
     - pup
     - pwgen
     - the_silver_searcher
@@ -44,9 +47,8 @@
     - slack
 #    - sophos-anti-virus-home-edition
     - sublime-text
-    - sqwiggle
     - trailer
     - virtualbox
+    - visual-studio-code
 
 - include: ricty.yml
-- include: jo.yml

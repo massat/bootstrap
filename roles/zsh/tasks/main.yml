@@ -4,7 +4,6 @@
   homebrew: "name={{ item }}"
   with_items:
     - zsh
-    - autojump
 
 - name: zsh | .myzshrc
   copy: src=myzshrc dest=~/.myzshrc
