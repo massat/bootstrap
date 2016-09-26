@@ -11,7 +11,6 @@
     - hg
     - go
     - peco
-    - hugo
 
 - name: go | place go.conf
   copy: src=go.conf dest=~/.dotfiles.d/go.conf
@@ -25,3 +24,9 @@
 - name: ghq | configure ghq.root
   command: git config --global ghq.root ~/src
 
+- command: go get -u {{ item }}
+  with_items:
+    - github.com/motemen/gore
+    - github.com/nsf/gocode
+    - github.com/k0kubun/pp
+    - golang.org/x/tools/cmd/godoc

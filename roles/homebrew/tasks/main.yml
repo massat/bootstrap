@@ -15,7 +15,6 @@
   homebrew: "name={{ item }}"
   with_items:
     - awscli
-    - brew-cask
     - ctags
     - curl
     - jo
