@@ -8,5 +8,5 @@
   command: pip install boto
   sudo: yes
 
-  #- include: asciinema.yml
+- include: pyenv.yml
 - include: jedi.yml

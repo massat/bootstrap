@@ -1,0 +1,11 @@
+---
+
+- homebrew: name={{ item }}
+  with_items:
+    - pyenv
+    - pyenv-virtualenv
+
+- lineinfile: dest=~/.myzshrc line={{ item }}
+  with_items:
+    - eval "$(pyenv init -)"
+    - eval "$(pyenv virtualenv-init -)"
