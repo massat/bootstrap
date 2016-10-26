@@ -4,3 +4,4 @@
 - git: repo=git@github.com:massat/.vim.git dest=~/.vim depth=1
 - file: path=~/.vimrc src=~/.vim/.vimrc state=link
 
+- include: dein.yml

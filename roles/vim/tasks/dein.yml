@@ -1,0 +1,4 @@
+- get_url: url=https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh dest=/tmp/installer.sh mode=0755
+- file: path=~/.vim/dein state=directory
+- command: /tmp/installer.sh ~/.vim/dein
+
