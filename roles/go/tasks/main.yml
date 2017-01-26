@@ -1,10 +1,4 @@
 ---
-- name: brew | tap repositries
-  homebrew_tap: "tap={{ item }}"
-  ignore_errors: True
-  with_items:
-    - peco/peco
-
 - name: go | install go and tools
   homebrew: "name={{ item }}"
   with_items:

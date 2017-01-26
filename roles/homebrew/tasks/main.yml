@@ -15,12 +15,10 @@
   homebrew: "name={{ item }}"
   with_items:
     - awscli
-    - ctags
     - curl
     - jo
     - mobile-shell
     - ngrep
-    - ngrok2
     - pup
     - pwgen
     - the_silver_searcher
@@ -35,18 +33,14 @@
     - dropbox
     - evernote
     - google-chrome
-    - google-japanese-ime
     - hoster
     - itsycal
     - iterm2
-    - karabiner
     - libreoffice
 #    - onepassword
     - qlmarkdown
     - quitter
     - slack
-#    - sophos-anti-virus-home-edition
-    - sublime-text
     - trailer
     - virtualbox
     - visual-studio-code
