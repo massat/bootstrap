@@ -15,6 +15,7 @@
   homebrew: "name={{ item }}"
   with_items:
     - awscli
+    - ctags
     - curl
     - jo
     - mobile-shell
