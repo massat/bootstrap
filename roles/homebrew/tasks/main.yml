@@ -18,6 +18,7 @@
     - ctags
     - curl
     - jo
+    - jq
     - mobile-shell
     - ngrep
     - pup
