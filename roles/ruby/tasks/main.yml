@@ -34,3 +34,5 @@
     - git-pr-release
     - rubocop
     - pry
+    # requirements of vscode's ruby extension
+    - rcodetools
