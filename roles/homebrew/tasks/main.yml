@@ -30,7 +30,6 @@
 - name: brew | install apps
   homebrew_cask: "name={{ item }}"
   with_items:
-    - alfred
     - dash
     - dropbox
     - evernote
