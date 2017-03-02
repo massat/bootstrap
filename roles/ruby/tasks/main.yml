@@ -32,7 +32,9 @@
   with_items:
     - bundler
     - git-pr-release
-    - rubocop
     - pry
+    - refe2
+    - rsense
+    - rubocop
     # requirements of vscode's ruby extension
     - rcodetools
