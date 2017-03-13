@@ -1,7 +1,7 @@
 ---
 
-- homebrew: name=vim install_options=override-system-vi,with-lua,with-luajit,with-custom-ruby
 - git: repo=git@github.com:massat/.vim.git dest=~/.vim force=yes
 - file: path=~/.vimrc src=~/.vim/.vimrc state=link
+- homebrew: name=neovim/neovim/neovim
 
 - include: dein.yml
