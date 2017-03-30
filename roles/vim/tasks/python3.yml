@@ -1,0 +1,5 @@
+---
+
+- command: pyenv install {{ vim_python_version }}
+- command: pyenv global {{ vim_python_version }}
+- command: pyenv rehash

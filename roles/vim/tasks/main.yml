@@ -5,4 +5,5 @@
 - file: path=~/.config/nvim src=~/.vim state=link
 - file: path=~/.config/nvim/init.vim src=~/.vim/.vimrc state=link
 
+- include: python3.yml
 - include: dein.yml
