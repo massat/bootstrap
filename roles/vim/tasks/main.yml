@@ -1,7 +1,8 @@
 ---
 
-- git: repo=git@github.com:massat/.vim.git dest=~/.vim force=yes
-- file: path=~/.vimrc src=~/.vim/.vimrc state=link
 - homebrew: name=neovim/neovim/neovim
+- git: repo=git@github.com:massat/.vim.git dest=~/.vim force=yes
+- file: path=~/.config/nvim src=~/.vim state=link
+- file: path=~/.config/nvim/init.vim src=~/.vim/.vimrc state=link
 
 - include: dein.yml
