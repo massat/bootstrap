@@ -1,12 +1,10 @@
 ---
 
-- name: python | install pip
-  command: easy_install pip
-  sudo: yes
-
-- name: python | install boto
-  command: pip install boto
-  sudo: yes
-
 - include: pyenv.yml
-- include: jedi.yml
+
+- pip: name=boto executable=~/.pyenv/shims/pip3
+  with_items:
+    - asciinema
+    - boto
+    - jedi
+
