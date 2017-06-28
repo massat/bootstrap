@@ -15,7 +15,7 @@ $ xcode-select --install
 ### clone repositry
 
 ```sh
-$ git clone git@github.com:massat/bootstrap.git
+$ git clone https://github.com/massat/bootstrap.git
 $ cd bootstrap
 ```
 
