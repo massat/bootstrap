@@ -1,13 +1,10 @@
 ---
 
-- name: ruby | update profile
-  lineinfile: dest=~/.myzshrc line='eval "$(rbenv init -)"'
-
 - name: ruby | place .gemrc
   template: "src=gemrc dest=~/.gemrc"
 
 - name: ruby | install bundler
-  gem:  name={{ item }}
+  command: ~/  name={{ item }}
   with_items:
     - bundler
     - git-pr-release
