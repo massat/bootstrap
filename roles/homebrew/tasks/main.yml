@@ -31,8 +31,6 @@
   homebrew_cask: "name={{ item }}"
   with_items:
     - dash
-    - dropbox
-    - evernote
     - hoster
     - itsycal
     - iterm2
