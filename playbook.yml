@@ -13,5 +13,5 @@
     - { role: roles/vagrant }
     - { role: roles/python }
     - { role: roles/php70 }
-    - { role: roles/ruby, version: 2.4.0 }
+    - { role: roles/ruby }
     - { role: roles/go }

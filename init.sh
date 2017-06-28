@@ -13,3 +13,4 @@ pyenv global 3.6.1
 pyenv rehash
 
 sudo pip3 install ansible
+sudo ansible-galaxy install zzet.rbenv

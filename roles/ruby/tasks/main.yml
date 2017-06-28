@@ -1,31 +1,10 @@
 ---
 
-- name: ruby | install rbenv ruby-build
-  homebrew: name="{{ item }}"
-  with_items:
-    - rbenv
-    - ruby-build
-
 - name: ruby | update profile
   lineinfile: dest=~/.myzshrc line='eval "$(rbenv init -)"'
 
-- name: "ruby | check {{ version }} is installed"
-  command: "test -d ~/.rbenv/versions/{{ version }}"
-  register: ruby_installed
-  ignore_errors: True
-
-- name: ruby | install ruby
-  command: "rbenv install {{ version }}"
-  when: ruby_installed|failed
-
-- name: ruby | set globaly
-  command: "rbenv global {{ version }}"
-
 - name: ruby | place .gemrc
   template: "src=gemrc dest=~/.gemrc"
-
-- name: ruby | rbenv rehash
-  command: rbenv rehash
 
 - name: ruby | install bundler
   gem:  name={{ item }}
