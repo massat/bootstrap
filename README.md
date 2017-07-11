@@ -6,6 +6,14 @@ Bootstrap my mac.
 synopsis
 --------
 
+### install Dropbox
+
+https://www.dropbox.com
+
+```sh
+$ ln -s ~/Dropbox/dotfiles/ssh ~/.ssh
+```
+
 ### install the command line developer tools
 
 ```sh
