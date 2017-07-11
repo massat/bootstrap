@@ -31,7 +31,7 @@
   homebrew_cask: "name={{ item }}"
   with_items:
     - dash
-    - hoster
+#    - hoster
     - itsycal
     - iterm2
     - libreoffice
