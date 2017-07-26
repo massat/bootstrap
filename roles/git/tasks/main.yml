@@ -25,6 +25,8 @@
     - post-merge
     - post-rewrite
 
+- file: path=~/bin state=directory
+- copy: src=git-delete-merged-branches dest=~/bin mode=0755
 
 - name: git | download git-credential-osxkeychain
   get_url: url=https://github-media-downloads.s3.amazonaws.com/osx/git-credential-osxkeychain dest=/usr/local/bin
