@@ -21,9 +21,9 @@
     - jq
     - mobile-shell
     - ngrep
+    - pt
     - pup
     - pwgen
-    - the_silver_searcher
     - tmux
     - wget
 
