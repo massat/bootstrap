@@ -12,5 +12,4 @@
     - { role: roles/vim }
     - { role: roles/vagrant }
     - { role: roles/python }
-    - { role: roles/php70 }
     - { role: roles/go }

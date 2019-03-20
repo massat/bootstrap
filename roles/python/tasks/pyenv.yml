@@ -1,9 +1,9 @@
 ---
 
-- homebrew: name={{ item }}
-  with_items:
-    - pyenv
-    - pyenv-virtualenv
+- homebrew:
+    name:
+      - pyenv
+      - pyenv-virtualenv
 
 - lineinfile: dest=~/.myzshrc line={{ item }}
   with_items:

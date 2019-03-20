@@ -2,9 +2,9 @@
 
 - include: pyenv.yml
 
-- pip: name=boto executable=~/.pyenv/shims/pip3
-  with_items:
-    - asciinema
-    - boto
-    - jedi
-
+- pip:
+    name:
+      - asciinema
+      - boto
+      - jedi
+    executable: ~/.pyenv/shims/pip3

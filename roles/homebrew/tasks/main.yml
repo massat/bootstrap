@@ -7,35 +7,31 @@
   homebrew_tap: "tap={{ item }}"
   ignore_errors: True
   with_items:
-    - homebrew/binary
+    - aws/tap
     - homebrew/versions
     - caskroom/cask
 
 - name: brew | install packages
-  homebrew: "name={{ item }}"
-  with_items:
-    - awscli
-    - ctags
-    - curl
-    - jo
-    - jq
-    - mobile-shell
-    - ngrep
-    - pt
-    - pup
-    - pwgen
-    - tmux
-    - wget
+  homebrew:
+    name:
+      - awscli
+      - aws-sam-cli
+      - curl
+      - jo
+      - jq
+      - ngrep
+      - pt
+      - pup
+      - tmux
+      - wget
 
 - name: brew | install apps
   homebrew_cask: "name={{ item }}"
   with_items:
     - dash
-#    - hoster
     - itsycal
     - iterm2
     - libreoffice
-    - qlmarkdown
     - quitter
     - slack
     - trailer

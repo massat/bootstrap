@@ -1,10 +1,10 @@
 ---
 - name: go | install go and tools
-  homebrew: "name={{ item }}"
-  with_items:
-    - hg
-    - go
-    - peco
+  homebrew:
+    name:
+      - hg
+      - go
+      - peco
 
 - name: go | place go.conf
   copy: src=go.conf dest=~/.dotfiles.d/go.conf
@@ -17,10 +17,3 @@
 
 - name: ghq | configure ghq.root
   command: git config --global ghq.root ~/src
-
-- command: go get -u {{ item }}
-  with_items:
-    - github.com/motemen/gore
-    - github.com/nsf/gocode
-    - github.com/k0kubun/pp
-    - golang.org/x/tools/cmd/godoc
