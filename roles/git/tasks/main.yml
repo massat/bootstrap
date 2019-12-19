@@ -1,11 +1,11 @@
 ---
 
 - name: git | install git, hub, tig
-  homebrew: "name={{ item }}"
-  with_items:
-    - git
-    - hub
-    - tig
+  homebrew:
+    name:
+      - git
+      - hub
+      - tig
 
 - name: git | place .gitconfig
   copy: src=gitconfig dest=~/.gitconfig

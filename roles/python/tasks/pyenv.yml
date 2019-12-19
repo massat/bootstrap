@@ -1,9 +1,6 @@
 ---
 
-- homebrew:
-    name:
-      - pyenv
-
+# init.sh で pyenv はインストール済み
 - lineinfile: dest=~/.myzshrc line={{ item }}
   with_items:
     - export PYENV_ROOT="$HOME/.pyenev"
