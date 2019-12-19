@@ -3,9 +3,9 @@
 - homebrew:
     name:
       - pyenv
-      - pyenv-virtualenv
 
 - lineinfile: dest=~/.myzshrc line={{ item }}
   with_items:
+    - export PYENV_ROOT="$HOME/.pyenev"
+    - export PATH="$PYENV_ROOT/bin:$PATH"
     - eval "$(pyenv init -)"
-    - eval "$(pyenv virtualenv-init -)"

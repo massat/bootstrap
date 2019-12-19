@@ -1,10 +1,9 @@
 ---
 
 - include: pyenv.yml
+- include: pipenv.yml
 
 - pip:
     name:
-      - asciinema
       - boto
-      - jedi
     executable: ~/.pyenv/shims/pip3

@@ -1,4 +1,0 @@
----
-
-- pip: name=jedi executable=~/.pyenv/shims/pip3
-  sudo: yes
