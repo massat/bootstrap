@@ -13,7 +13,7 @@
   copy: src=peco.conf dest=~/.dotfiles.d/peco.conf
 
 - name: go | install ghq
-  shell: GOPATH=$HOME go get -u github.com/motemen/ghq
+  shell: GOPATH=$HOME GO111MODULE=on go get github.com/motemen/ghq
 
 - name: ghq | configure ghq.root
   command: git config --global ghq.root ~/src

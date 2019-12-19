@@ -15,7 +15,6 @@
   homebrew:
     name:
       - awscli
-      - aws-sam-cli
       - curl
       - jo
       - jq
@@ -27,11 +26,11 @@
 
 - name: brew | install apps
   homebrew_cask: "name={{ item }}"
+  ignore_errors: True
   with_items:
     - dash
     - itsycal
     - iterm2
-    - libreoffice
     - quitter
     - slack
     - trailer

@@ -3,7 +3,3 @@
 - include: pyenv.yml
 - include: pipenv.yml
 
-- pip:
-    name:
-      - boto
-    executable: ~/.pyenv/shims/pip3

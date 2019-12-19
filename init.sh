@@ -8,8 +8,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-pyenv install 3.7.2
-pyenv global 3.7.2
+pyenv install 3.7.5
+pyenv global 3.7.5
 pyenv rehash
 
 sudo pip3 install ansible

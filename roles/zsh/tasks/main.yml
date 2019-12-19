@@ -24,7 +24,7 @@
   file: path=~/.dotfiles.d state=directory
 
 - name: zsh | add zsh to standard shells
-  sudo: yes
+  become: yes
   lineinfile: dest=/etc/shells line=/usr/local/bin/zsh
 
 - name: zsh | set default shell

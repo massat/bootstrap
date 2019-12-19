@@ -2,8 +2,8 @@
 
 - name: nfsd | touch /etc/exports
   file: path=/etc/exports state=touch
-  sudo: yes
+  become: yes
 
 - name: nfsd | enable nfsd
   command: nfsd enable
-  sudo: yes
+  become: yes
