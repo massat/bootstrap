@@ -11,3 +11,4 @@
     - { role: roles/zsh }
     - { role: roles/vim }
     - { role: roles/vagrant }
+    - { role: roles/python }

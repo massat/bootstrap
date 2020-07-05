@@ -1,0 +1,8 @@
+---
+
+# init.sh で pyenv はインストール済み
+- lineinfile: dest=~/.myzshrc line={{ item }}
+  with_items:
+    - export PYENV_ROOT="$HOME/.pyenv"
+    - export PATH="$PYENV_ROOT/bin:$PATH"
+    - eval "$(pyenv init -)"
