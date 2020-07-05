@@ -1,6 +1,6 @@
 ---
 
-- pip: name=neovim executable=~/.pyenv/shims/pip3
+- pip: name=neovim
 - homebrew: name=neovim/neovim/neovim
 - git: repo=https://github.com/massat/.vim.git dest=~/.vim force=yes
 - file: path=~/.config state=directory mode=0755

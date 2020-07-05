@@ -1,14 +1,11 @@
 ---
 
-- name: brew | update
-  homebrew: update_homebrew=yes upgrade_all=yes
+- homebrew: update_homebrew=yes upgrade_all=yes
 
-- name: brew | tap repositries
-  homebrew_tap: "tap={{ item }}"
+- homebrew_tap: "tap={{ item }}"
   ignore_errors: True
   with_items:
     - aws/tap
-    - homebrew/versions
     - caskroom/cask
 
 - name: brew | install packages
@@ -16,12 +13,9 @@
     name:
       - awscli
       - curl
-      - jo
       - jq
-      - ngrep
       - pt
-      - pup
-      - tmux
+      - yarn
       - wget
 
 - name: brew | install apps

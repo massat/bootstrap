@@ -1,6 +1,0 @@
----
-
-- pip:
-    name:
-      - pipenv
-    executable: ~/.pyenv/shims/pip3

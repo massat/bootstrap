@@ -1,10 +1,5 @@
 ---
 
-- name: brew | install packages
-  homebrew: "name={{ item }}"
-  with_items:
-    - zsh
-
 - name: zsh | .myzshrc
   copy: src=myzshrc dest=~/.myzshrc
 
@@ -22,11 +17,4 @@
 
 - name: zsh | mkdir .dotfiles.d
   file: path=~/.dotfiles.d state=directory
-
-- name: zsh | add zsh to standard shells
-  become: yes
-  lineinfile: dest=/etc/shells line=/usr/local/bin/zsh
-
-- name: zsh | set default shell
-  command: "chsh -s /usr/local/bin/zsh {{ ansible_env.USER }}"
 

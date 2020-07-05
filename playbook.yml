@@ -6,10 +6,8 @@
   roles:
     - { role: roles/system }
     - { role: roles/homebrew }
-    - { role: roles/zsh }
     - { role: roles/ssh }
     - { role: roles/git }
+    - { role: roles/zsh }
     - { role: roles/vim }
     - { role: roles/vagrant }
-    - { role: roles/python }
-    - { role: roles/go }

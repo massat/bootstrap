@@ -3,15 +3,13 @@
 - name: git | install git, hub, tig
   homebrew:
     name:
+      - ghq
       - git
-      - hub
+      - github/gh/gh
       - tig
 
 - name: git | place .gitconfig
   copy: src=gitconfig dest=~/.gitconfig
-
-# - name: git | place .gitignore
-#   copy: src=gitignore dest=~/.gitignore
 
 - name: git | dir for templates
   file: path=~/.git_template/hooks state=directory
@@ -31,11 +29,4 @@
 - name: git | configure credential.helper osxkeychain
   command: git config --global credential.helper osxkeychain
 
-- name: git | path to git
-  command: brew --prefix git
-  register: path_to_git
-
-- name: git | link diff-highlight into PATH
-  file: "src={{ path_to_git.stdout }}/share/git-core/contrib/diff-highlight/diff-highlight dest=/usr/local/bin/diff-highlight state=link"
-
-- include: hub.zsh_completion.yml
+- command: git config --global ghq.root ~/src
