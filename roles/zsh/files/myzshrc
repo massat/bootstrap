@@ -41,11 +41,6 @@ export EDITOR="vim"
 # GREP
 export GREP_OPTIONS='--color=auto'
 
-# use `hub`
-eval "$(hub alias -s)"
-fpath=(~/.zsh/completions $fpath)
-autoload -U compinit && compinit
-
 # load extra configs
 for file in `ls ~/.dotfiles.d/*.conf`; do
     source $file
