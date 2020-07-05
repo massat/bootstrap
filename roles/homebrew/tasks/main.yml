@@ -6,7 +6,6 @@
   ignore_errors: True
   with_items:
     - aws/tap
-    - caskroom/cask
 
 - name: brew | install packages
   homebrew:
@@ -28,7 +27,6 @@
     - quitter
     - slack
     - trailer
-    - virtualbox
     - visual-studio-code
 
 - include: ricty.yml

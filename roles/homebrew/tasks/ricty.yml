@@ -1,6 +1,6 @@
 - homebrew_tap: tap=sanemat/font
   ignore_errors: True
-- homebrew: name=ricty install_options=vim-powerline
+- homebrew: name=ricty
 - shell: brew info ricty | grep 'sanemat/font/ricty' | awk '{ print $3 }'
   register: ricty_version
 - shell: cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/

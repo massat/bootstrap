@@ -30,3 +30,8 @@
   command: git config --global credential.helper osxkeychain
 
 - command: git config --global ghq.root ~/src
+
+- file:
+    state: link
+    src: /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+    dest: /usr/local/bin/diff-highlight
