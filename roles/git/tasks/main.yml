@@ -9,9 +9,9 @@
       - tig
 
 - file:
-  state: link
-  src: /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
-  dest: /usr/local/bin/diff-highlight
+    state: link
+    src: /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+    dest: /usr/local/bin/diff-highlight
 
 - name: git | place .gitconfig
   copy: src=gitconfig dest=~/.gitconfig
