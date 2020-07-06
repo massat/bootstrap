@@ -8,6 +8,11 @@
       - github/gh/gh
       - tig
 
+- file:
+  state: link
+  src: /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+  dest: /usr/local/bin/diff-highlight
+
 - name: git | place .gitconfig
   copy: src=gitconfig dest=~/.gitconfig
 
@@ -23,6 +28,8 @@
     - post-merge
     - post-rewrite
 
+- copy: src=peco.conf dest=~/.dotfiles.d
+
 - file: path=~/bin state=directory
 - copy: src=git-delete-merged-branches dest=~/bin mode=0755
 
@@ -30,8 +37,3 @@
   command: git config --global credential.helper osxkeychain
 
 - command: git config --global ghq.root ~/src
-
-- file:
-    state: link
-    src: /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
-    dest: /usr/local/bin/diff-highlight
