@@ -12,6 +12,7 @@ https://www.dropbox.com
 
 ```sh
 $ ln -s ~/Dropbox/dotfiles/ssh ~/.ssh
+$ chmod 400 ~/.ssh/id_rsa*
 ```
 
 ### install the command line developer tools
@@ -36,5 +37,5 @@ $ cd bootstrap
 ### setup with ansible
 
 ```sh
-$ ansible-playbook -i inventory -K playbook.yml
+$ ~/.pyenv/shims/ansible-playbook -i inventory -K playbook.yml
 ```
