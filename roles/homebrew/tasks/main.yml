@@ -15,6 +15,7 @@
       - jq
       - peco
       - pt
+      - pwgen
       - yarn
       - wget
 
