@@ -19,6 +19,7 @@ setopt nonomatch # scp でワイルドカードを使えるように
 ################################################
 # aliases
 ################################################
+alias diff="colordiff -u"
 alias ll="ls -lGa"
 alias ls='ls -G'
 alias ssh="ssh -o ServerAliveInterval=60"
