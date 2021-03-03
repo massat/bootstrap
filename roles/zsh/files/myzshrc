@@ -19,7 +19,6 @@ setopt nonomatch # scp でワイルドカードを使えるように
 ################################################
 # aliases
 ################################################
-alias aws='docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
 alias diff="colordiff -u"
 alias ll="ls -lGa"
 alias ls='ls -G'

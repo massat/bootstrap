@@ -10,6 +10,7 @@
 - name: brew | install packages
   homebrew:
     name:
+      - awscli
       - colordiff
       - curl
       - jq
