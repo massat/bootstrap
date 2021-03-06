@@ -1,14 +1,16 @@
 #!/bin/sh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-/usr/local/bin/brew install pyenv
+/usr/local/bin/brew install anyenv openssl
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+eval "$(/usr/local/bin/anyenv init -)"
+echo 'eval "$(anyenv init -)"' >> ~/.zshrc
 
-pyenv install 3.8.3
-pyenv global 3.8.3
-pyenv rehash
+/usr/local/bin/anyenv install --init
+/usr/local/bin/anyenv install pyenv
+exec $SHELL -l
 
-sudo pip3 install ansible
+~/.anyenv/envs/pyenv/bin/pyenv install 3.9.2
+~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install --upgrade pip
+~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install ansible
+~/.anyenv/envs/pyenv/versions/3.9.2/bin/ansible-playbook -i localhost -c local -K playbook.yml
