@@ -15,6 +15,10 @@ $ ln -s ~/Dropbox/dotfiles/ssh ~/.ssh
 $ chmod 400 ~/.ssh/id_rsa*
 ```
 
+### install Docker
+
+https://www.docker.com/get-started
+
 ### install the command line developer tools
 
 ```sh
@@ -32,10 +36,4 @@ $ cd bootstrap
 
 ```sh
 ./init.sh
-```
-
-### setup with ansible
-
-```sh
-$ ~/.pyenv/shims/ansible-playbook -i inventory -K playbook.yml
 ```
