@@ -1,9 +1,0 @@
----
-
-- name: vagrant | install vagrant
-  homebrew_cask: name=vagrant
-  ignore_errors: True
-
-- name: vagrant | remove dhcpserver if exists
-  command: VBoxManage dhcpserver remove --netname HostInterfaceNetworking-vboxnet0
-  ignore_errors: True
