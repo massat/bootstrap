@@ -4,7 +4,6 @@
 /usr/local/bin/brew install anyenv openssl
 
 eval "$(/usr/local/bin/anyenv init -)"
-echo 'eval "$(anyenv init -)"' >> ~/.zshrc
 
 /usr/local/bin/anyenv install --init
 /usr/local/bin/anyenv install pyenv
@@ -14,3 +13,5 @@ exec $SHELL -l
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install --upgrade pip
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install ansible
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/ansible-playbook -i localhost -c local -K playbook.yml
+
+echo 'eval "$(anyenv init -)"' >> ~/.zshrc
