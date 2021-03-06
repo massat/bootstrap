@@ -2,22 +2,15 @@
 
 - homebrew: update_homebrew=yes upgrade_all=yes
 
-- homebrew_tap: "tap={{ item }}"
-  ignore_errors: True
-  with_items:
-    - aws/tap
-
 - name: brew | install packages
   homebrew:
     name:
-      - awscli
       - colordiff
       - curl
       - jq
       - peco
       - pt
       - pwgen
-      - yarn
       - wget
 
 - name: brew | install apps
@@ -31,5 +24,3 @@
     - slack
     - trailer
     - visual-studio-code
-
-- include: ricty.yml
