@@ -7,8 +7,6 @@
     - { role: roles/system }
     - { role: roles/homebrew }
     - { role: roles/ssh }
-    - { role: roles/git }
     - { role: roles/zsh }
+    - { role: roles/git }
     - { role: roles/vim }
-    - { role: roles/vagrant }
-    - { role: roles/python }
