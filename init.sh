@@ -7,6 +7,7 @@ eval "$(/usr/local/bin/anyenv init -)"
 
 /usr/local/bin/anyenv install --init
 /usr/local/bin/anyenv install pyenv
+/usr/local/bin/anyenv install nodenv
 ~/.anyenv/envs/pyenv/bin/pyenv install 3.9.2
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install --upgrade pip
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install ansible
