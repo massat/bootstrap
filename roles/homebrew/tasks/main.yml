@@ -1,5 +1,4 @@
 ---
-
 - homebrew: update_homebrew=yes upgrade_all=yes
 
 - name: brew | install packages
@@ -9,6 +8,7 @@
       - colordiff
       - curl
       - jq
+      - pkg-config
       - peco
       - pt
       - pwgen
