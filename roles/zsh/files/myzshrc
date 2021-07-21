@@ -26,6 +26,7 @@ alias ssh="ssh -o ServerAliveInterval=60"
 alias rake='noglob rake'
 alias g="git"
 alias vim="nvim"
+alias describe-instances="[ \"${ROLE:+foo}\" ] && [ \"${STAGE:+foo}\" ] && aws ec2 describe-instances --filter \"Name=tag:Role,Values=${ROLE}\" \"Name=tag:Stage,Values=${STAGE}\" --query \"Reservations[*].Instances[*].PrivateDnsName\" --output text"
 
 ################################################
 # Environment
