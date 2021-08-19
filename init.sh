@@ -1,16 +1,19 @@
 #!/bin/sh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-/usr/local/bin/brew install anyenv openssl
+/usr/local/bin/brew install git openssl
 
-eval "$(/usr/local/bin/anyenv init -)"
+git clone https://github.com/anyenv/anyenv ~/.anyenv
 
-/usr/local/bin/anyenv install --init
-/usr/local/bin/anyenv install pyenv
-/usr/local/bin/anyenv install nodenv
+eval "$(~/.anyenv/bin/anyenv init -)"
+
+~/.anyenv/bin/anyenv install --init
+~/.anyenv/bin/anyenv install pyenv
+~/.anyenv/bin/anyenv install nodenv
 ~/.anyenv/envs/pyenv/bin/pyenv install 3.9.2
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install --upgrade pip
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install ansible
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/ansible-playbook -i localhost -c local -K playbook.yml
 
+echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(anyenv init -)"' >> ~/.zshrc
