@@ -6,12 +6,10 @@ Bootstrap my mac.
 synopsis
 --------
 
-### install Dropbox
-
-https://www.dropbox.com
+### dotfiles
 
 ```sh
-$ ln -s ~/Dropbox/dotfiles/ssh ~/.ssh
+$ ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/dotfiles/ssh ~/.ssh
 $ chmod 400 ~/.ssh/id_rsa*
 ```
 
