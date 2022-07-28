@@ -13,7 +13,7 @@
   template: src=~/.oh-my-zsh/templates/zshrc.zsh-template dest=~/.oh-my-zshrc
 
 - name: zsh | source files
-  lineinfile: dest=~/.zprofile line={{ item }}
+  lineinfile: dest=~/.zshrc line={{ item }}
   with_items:
     - . ~/.oh-my-zshrc
     - . ~/.myzshrc
