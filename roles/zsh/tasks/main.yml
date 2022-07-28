@@ -12,8 +12,11 @@
 - name: zsh | deploy .zshrc
   template: src=~/.oh-my-zsh/templates/zshrc.zsh-template dest=~/.oh-my-zshrc
 
-- name: zsh | use myzshrc
-  lineinfile: dest=~/.zprofile line=". ~/.oh-my-zshrc"
+- name: zsh | source files
+  lineinfile: dest=~/.zprofile line={{ item }}
+  with_items:
+    - . ~/.oh-my-zshrc
+    - . ~/.myzshrc
 
 - name: zsh | mkdir .dotfiles.d
   file: path=~/.dotfiles.d state=directory
