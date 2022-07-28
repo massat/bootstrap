@@ -4,7 +4,7 @@
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/massat/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-/usr/local/bin/brew install git openssl
+/usr/local/bin/brew install git
 
 git clone https://github.com/anyenv/anyenv ~/.anyenv
 
