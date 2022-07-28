@@ -1,6 +1,9 @@
 #!/bin/sh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/massat/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 /usr/local/bin/brew install git openssl
 
 git clone https://github.com/anyenv/anyenv ~/.anyenv
