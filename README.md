@@ -9,7 +9,10 @@ synopsis
 ### dotfiles
 
 ```sh
-$ ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs/dotfiles/ssh ~/.ssh
+$ ln -s ~/Library/Mobile\ Documents/com~apple~CloudDocs ~/iCloud\ Drive
+$ ln -s ~/iCloud\ Drive/dotfiles/aws ~/.aws
+$ ln -s ~/iCloud\ Drive/dotfiles/ssh ~/.ssh
+$ chmod 400 ~/.aws/*
 $ chmod 400 ~/.ssh/id_rsa*
 ```
 
