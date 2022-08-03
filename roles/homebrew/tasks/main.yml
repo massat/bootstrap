@@ -6,7 +6,9 @@
     name:
       - awscli
       - colordiff
+      - coreutils
       - curl
+      - grep
       - jq
       - pkg-config
       - peco
