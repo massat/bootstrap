@@ -4,7 +4,7 @@
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-/usr/local/bin/brew install git
+/opt/homebrew/bin/brew install git
 
 git clone https://github.com/anyenv/anyenv ~/.anyenv
 echo 'eval "$(~/.anyenv/bin/anyenv init -)"' >> ~/.zshrc
