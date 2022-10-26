@@ -18,3 +18,7 @@ echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.zshrc
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install --upgrade pip
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/pip install ansible
 ~/.anyenv/envs/pyenv/versions/3.9.2/bin/ansible-playbook -i localhost -c local -K playbook.yml
+
+# Yarn
+mkdir -p "$(~/.anyenv/envs/nodenv/bin/nodenv root)/plugins"
+git clone https://github.com/pine/nodenv-yarn-install.git "$(~/.anyenv/envs/nodenv/bin/nodenv root)/plugins/nodenv-yarn-install"
