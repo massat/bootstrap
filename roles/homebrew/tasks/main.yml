@@ -8,7 +8,6 @@
       - colordiff
       - coreutils
       - curl
-      - docker-credential-helper-ecr
       - grep
       - jq
       - pkg-config
