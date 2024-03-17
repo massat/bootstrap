@@ -8,20 +8,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-/opt/homebrew/bin/brew install git
-
-## aqua
-brew install aquaproj/aqua/aqua
-aqua install
-
-## Anyenv
-git clone https://github.com/anyenv/anyenv ~/.anyenv
-echo 'eval "$(~/.anyenv/bin/anyenv init -)"' >> ~/.zshrc
-eval "$(~/.anyenv/bin/anyenv init -)"
-echo 'export PATH="$HOME/.anyenv/bin:$PATH"' >> ~/.zshrc
-
-~/.anyenv/bin/anyenv install --init
-~/.anyenv/bin/anyenv install nodenv
+/opt/homebrew/bin/brew install \
+    anyenv \
+    awscli \
+    docker \
+    docker-buildx \
+    docker-compose \
+    git \
+    gh \
+    ghq \
+    jq \
+    peco
 
 ## Yarn
 # mkdir -p "$(~/.anyenv/envs/nodenv/bin/nodenv root)/plugins"
