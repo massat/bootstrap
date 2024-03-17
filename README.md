@@ -16,16 +16,6 @@ $ chmod 400 ~/.aws/*
 $ chmod 400 ~/.ssh/id_rsa*
 ```
 
-### install Docker
-
-https://www.docker.com/get-started
-
-### install the command line developer tools
-
-```sh
-$ xcode-select --install
-```
-
 ### clone repositry
 
 ```sh
