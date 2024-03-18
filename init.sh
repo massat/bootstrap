@@ -20,7 +20,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     jq \
     peco \
     pt \
-    pwgen
+    pwgen \
+    tig
 
 /opt/homebrew/bin/brew install \
     --cask \
