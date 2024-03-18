@@ -28,6 +28,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     google-chrome \
     hyper \
     itsycal \
+    session-manager-plugin \
     slack \
     trailer \
     visual-studio-code \
