@@ -34,6 +34,10 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     visual-studio-code \
     zoom
 
+## git
+git config --global credential.helper osxkeychain
+git config --global ghq.root ~/src
+
 ## nodeenv
 anyenv install nodenv
 
