@@ -11,9 +11,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     anyenv \
     awscli \
     cask \
-    docker \
-    docker-buildx \
-    docker-compose \
     git \
     gh \
     ghq \
@@ -26,6 +23,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 /opt/homebrew/bin/brew install \
     --cask \
     dash \
+    docker \
     figma \
     google-chrome \
     hyper \
