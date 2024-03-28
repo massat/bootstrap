@@ -11,6 +11,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     anyenv \
     awscli \
     cask \
+    docker-credential-helper-ecr \
     git \
     gh \
     ghq \
