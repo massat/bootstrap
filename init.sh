@@ -12,6 +12,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     awscli \
     cask \
     docker-credential-helper-ecr \
+    fujiwara/tap/ecsta \
     git \
     gh \
     ghq \
