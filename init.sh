@@ -28,12 +28,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     docker \
     figma \
     google-chrome \
-    hyper \
     itsycal \
     session-manager-plugin \
     slack \
     trailer \
     visual-studio-code \
+    warp \
     zoom
 
 ## git
