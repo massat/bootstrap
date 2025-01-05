@@ -27,6 +27,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     dash \
     docker \
     figma \
+    ghostty \
     google-chrome \
     itsycal \
     session-manager-plugin \
