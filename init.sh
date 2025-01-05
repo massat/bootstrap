@@ -44,8 +44,4 @@ git config --global ghq.root ~/src
 ## nodeenv
 anyenv install nodenv
 
-## Yarn
-mkdir -p "$(~/.anyenv/envs/nodenv/bin/nodenv root)/plugins"
-git clone https://github.com/pine/nodenv-yarn-install.git "$(~/.anyenv/envs/nodenv/bin/nodenv root)/plugins/nodenv-yarn-install"
-
 source ~/.zshrc
