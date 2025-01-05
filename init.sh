@@ -34,7 +34,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
     slack \
     trailer \
     visual-studio-code \
-    warp \
     zoom
 
 ## git
