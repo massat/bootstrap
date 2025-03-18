@@ -9,6 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 /opt/homebrew/bin/brew install \
     anyenv \
+    aquaproj/aqua/aqua \
     awscli \
     cask \
     docker-credential-helper-ecr \
