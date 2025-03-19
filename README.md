@@ -12,6 +12,7 @@ $ ln -s ~/iCloud\ Drive/dotfiles/.gitconfig ~/.gitconfig
 $ ln -s ~/iCloud\ Drive/dotfiles/aws ~/.aws
 $ ln -s ~/iCloud\ Drive/dotfiles/rc.d ~/.rc.d
 $ ln -s ~/iCloud\ Drive/dotfiles/ssh ~/.ssh
+$ ln -s ~/iCloud\ Drive/bin ~/bin
 $ chmod 400 ~/.aws/*
 $ chmod 400 ~/.ssh/id_rsa*
 $ echo "source ~/.myzshrc" >> ~/.zshrc
